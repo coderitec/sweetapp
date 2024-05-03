@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { View } from 'react-native';
+import { View, Text, StyleSheet} from 'react-native';
 
 import WelcomeScreen from './components/WelcomeScreen';
 
@@ -7,9 +7,13 @@ import WelcomeScreen from './components/WelcomeScreen';
 export default function App() {
   return (
 
-    <View>
+    <View style={mainStyle.head}>
       <WelcomeScreen />
     </View>
     
   );
 }
+
+const mainStyle = StyleSheet.create({
+  head: {flex: 1, backgroundColor: 'blue'}
+})
